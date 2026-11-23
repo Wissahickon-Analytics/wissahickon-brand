@@ -1,0 +1,109 @@
+{
+  "$description": "Wissahickon Analytics design tokens, in the Design Tokens Format Module 2025.10. color.palette holds the six brand colors. The other color groups are roles: each points at a palette color or holds a text color checked for contrast.",
+  "color": {
+    "$type": "color",
+    "palette": {
+      "ink": {
+        "$value": { "colorSpace": "srgb", "components": [0.0784, 0.1294, 0.1176], "hex": "#14211E" },
+        "$description": "Primary dark. Headings on light surfaces and the background of covers."
+      },
+      "pine": {
+        "$value": { "colorSpace": "srgb", "components": [0.1216, 0.302, 0.2471], "hex": "#1F4D3F" },
+        "$description": "Primary brand green. Links, accents and the wordmark's second line."
+      },
+      "teal": {
+        "$value": { "colorSpace": "srgb", "components": [0.1647, 0.4902, 0.4353], "hex": "#2A7D6F" },
+        "$description": "Secondary accent. The mark and large text only. For teal text at body size use color.text.accent."
+      },
+      "sage": {
+        "$value": { "colorSpace": "srgb", "components": [0.498, 0.7098, 0.6588], "hex": "#7FB5A8" },
+        "$description": "Light accent. Used on Ink only."
+      },
+      "sand": {
+        "$value": { "colorSpace": "srgb", "components": [0.898, 0.8627, 0.7961], "hex": "#E5DCCB" },
+        "$description": "Warm neutral fill."
+      },
+      "bone": {
+        "$value": { "colorSpace": "srgb", "components": [0.9647, 0.949, 0.9137], "hex": "#F6F2E9" },
+        "$description": "Paper. The default background."
+      }
+    },
+    "surface": {
+      "page": {
+        "$value": "{color.palette.bone}",
+        "$description": "The default background."
+      },
+      "fill": {
+        "$value": "{color.palette.sand}",
+        "$description": "Boxes and bands. Only heading, body and link text meet AA on it."
+      },
+      "inverse": {
+        "$value": "{color.palette.ink}",
+        "$description": "Dark background for covers and footers."
+      }
+    },
+    "text": {
+      "heading": {
+        "$value": "{color.palette.ink}",
+        "$description": "Headings on the page and fill surfaces."
+      },
+      "body": {
+        "$value": { "colorSpace": "srgb", "components": [0.2, 0.251, 0.2314], "hex": "#33403B" },
+        "$description": "Running text on the page and fill surfaces."
+      },
+      "accent": {
+        "$value": { "colorSpace": "srgb", "components": [0.1451, 0.4353, 0.3882], "hex": "#256F63" },
+        "$description": "Teal darkened so it meets AA as text of any size on the page surface."
+      },
+      "muted": {
+        "$value": { "colorSpace": "srgb", "components": [0.3451, 0.4118, 0.3843], "hex": "#586962" },
+        "$description": "Secondary text on the page surface. Replaces #6B7D76, which did not meet AA."
+      },
+      "faint": {
+        "$value": { "colorSpace": "srgb", "components": [0.4196, 0.4, 0.3569], "hex": "#6B665B" },
+        "$description": "Captions and metadata on the page surface. Replaces #928C7F, which did not meet AA."
+      },
+      "inverse": {
+        "$value": "{color.palette.bone}",
+        "$description": "Text on the inverse surface."
+      },
+      "inverse-accent": {
+        "$value": "{color.palette.sage}",
+        "$description": "Accent text on the inverse surface."
+      }
+    },
+    "link": {
+      "default": {
+        "$value": "{color.palette.pine}",
+        "$description": "Links on the page and fill surfaces."
+      }
+    },
+    "rule": {
+      "default": {
+        "$value": { "colorSpace": "srgb", "components": [0.8118, 0.7922, 0.749], "hex": "#CFCABF" },
+        "$description": "Hairline rules."
+      },
+      "soft": {
+        "$value": { "colorSpace": "srgb", "components": [0.9373, 0.9059, 0.8471], "hex": "#EFE7D8" },
+        "$description": "A lighter hairline for rules inside boxes and tables."
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "heading": {
+        "$value": ["Spectral", "Georgia", "serif"],
+        "$description": "Display and headings."
+      },
+      "body": {
+        "$value": ["Libre Franklin", "system-ui", "sans-serif"],
+        "$description": "Running text and interface."
+      },
+      "mono": {
+        "$value": ["Space Mono", "ui-monospace", "monospace"],
+        "$description": "Small labels, dates and figures. Use sparingly."
+      }
+    }
+  }
+}
