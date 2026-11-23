@@ -54,8 +54,8 @@ The seal sits above or beside the name, set in live type. There are no lockup fi
 
 ### Sizes and clear space
 
-These values are proposed and not yet approved. They come from rendering each file in Chromium
-at a range of sizes. The original brief set one rule only: use the small mark at 48 px and under.
+These values were set in November 2026 from rendering each file in Chromium at a range of
+sizes. The original brief set one rule only: use the small mark at 48 px and under.
 
 | Mark | Smallest on screen | Smallest in print |
 | --- | --- | --- |
